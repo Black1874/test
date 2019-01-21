@@ -6,8 +6,9 @@ public class Record {
 
     private Long id;
 
-    private Date consumerTime;
+    private String consumerTime;
     private Long productId;
+    private String product;
     private String programCode;
     private Double price;
     private String status;
@@ -22,12 +23,20 @@ public class Record {
         this.id = id;
     }
 
-    public Date getConsumerTime() {
+    public String getConsumerTime() {
         return consumerTime;
     }
 
-    public void setConsumerTime(Date consumerTime) {
+    public void setConsumerTime(String consumerTime) {
         this.consumerTime = consumerTime;
+    }
+
+    public String getProduct() {
+        return product;
+    }
+
+    public void setProduct(String product) {
+        this.product = product;
     }
 
     public Long getProductId() {

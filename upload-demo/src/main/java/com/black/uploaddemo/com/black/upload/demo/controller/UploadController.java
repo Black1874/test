@@ -31,7 +31,7 @@ public class UploadController {
                 String originalFilename = file.getOriginalFilename();
 
                 //文件保存
-                String path = "E:\\mywork\\QL\\gbt\\2_开发\\src\\upload-demo\\upload" ;
+                String path = "E:\\Code\\GitHub\\test" ;
                 File fileDst = new File(path + "\\" + originalFilename);
                 try {
                     file.transferTo(fileDst);
