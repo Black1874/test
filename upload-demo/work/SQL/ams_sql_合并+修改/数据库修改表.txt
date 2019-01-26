@@ -1,0 +1,25 @@
+修改日志
+
+1. cmcCsutomerInfo   删除联系人信息   全部存放在customerContact表
+
+2. cmcCustomerFollowUp  将附件attachment 修改成 attachmentId    (外键关系未处理 userId  以及 attachmentId)
+
+3. cmcClueFollowUp   将附件attachment 修改成 attachmentId    (外键关系未处理 userId  以及 attachmentId)
+
+4. boc_biz_oppor_follow_up 将附件attachment 修改成 attachmentId (外键关系未处理 userId  以及 attachmentId)
+
+5. boc_biz_oppor_info  删除联系人信息  全部存放在boc_biz_oppor_contact
+
+6. cpc_partner_info 删除联系人信息  全部存在 cpc_partner_contact
+
+7. 修改 cpc_partner_attachment id   类型  int为 bigInt  统一
+	cpc_partner_collaborator    id   userId  为 bigInt
+	
+	
+8. cpc_partner_follow_up  将附件attachment 修改成 attachmentId (外键关系未处理 userId  以及 attachmentId)
+
+9. smc_po_month_sales   id  int  改为 bigInt
+
+10. smc_po_month_sales_team    id  int  改为 bigInt
+
+11. 任务tpc   mq_message_data   是否删除?  
